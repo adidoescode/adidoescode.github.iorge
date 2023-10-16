@@ -5,66 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fairway Finders</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <button id="dropdown-btn"><span class="fa-solid fa-bars"></span></button>
-            <ul class="dropdown-links hidden">
-                <li><a href="#">Alla produkter</a></li>
-                <li><a href="#">Golfklubbor</a></li>
-                <li><a href="#">Bollar</a></li>
-                <li><a href="#">Bagar & Vagnar</a></li>
-                <li><a href="#">Tillbehör</a></li>
-            </ul>
-
-
-
-            <ul class="header-main">
+            <ul class="header">
                 <img src="/img/logo/fairway-finders-low-resolution-logo-color-on-transparent-background.png" alt=""
                     class="logo">
                 <div class="search-bar">
                     <li class="search-icon">
                         <form action="#">
-                            <span class="fas fa-search"></span>
+                            <span class="ri-arrow-right-line"></span>
                             <input type="search" placeholder="Sök">
                         </form>
                     </li>
                 </div>
-
+                <div class="nav-links">
+                    <li class="products-dropdown"><a href="#">Produkter</a>
+                        <ul class="product-links">
+                            <li><a href="">Lorem.</a></li>
+                            <li><a href="">Lorem.</a></li>
+                            <li><a href="">Lorem.</a></li>
+                            <li><a href="">Lorem.</a></li>
+                            <li><a href="">Lorem.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="produkter.html">Om oss</a></li>
+                    <li><a href="produkter.html">Kontakt</a></li>
+                </div>
                 <li class="right-icons">
-                    <a href="#" class="heart-icon"><span class="fa-solid fa-heart"></span></a>
-                    <a href="#" class="cart-icon"><span class="fa-solid fa-cart-shopping"></span></a>
-                    <a href="#" class="login-icon"><span class="fa-solid fa-arrow-right-to-bracket"></span></a>
+                    <a href="#" class="cart-icon"><span class="ri-shopping-cart-2-line"></span></a>
+                    <a href="#" class="login-icon"><span class="ri-login-box-line"></span></a>
                 </li>
             </ul>
         </nav>
     </header>
-
-    <section>
-        <div class="header-2">
-            <ul>
-                <li class="left-link"><a href="#">Alla produkter</a></li>
-                <li><a href="#">Golfklubbor</a></li>
-                <li><a href="#">Bollar</a></li>
-                <li><a href="#">Bagar & Vagnar</a></li>
-                <!-- Alla länkar kommer gå till produktsidan, om jag hade mer tid hade jag gjort enskilda -->
-                <li><a href="#">Tillbehör</a></li>
-                <li class="right-link1"><a href="#">Om oss</a></li>
-                <li class="right-link2"><a href="#">Kontakt</a></li>
-            </ul>
-        </div>
-    </section>
     <section class="image">
         <h1>Utförsäljning av sortiment!</h1>
         <p>Rean håller till 12/19.</p>
-        <form action="#">
-            <input class="image-button" type="button" value="Köp nu">
+        <form action="produkter.html">
+            <input class="image-button" type="submit" value="Köp nu" href="produkter.html">
             <!--Pil ikon-->
         </form>
     </section>
@@ -112,8 +95,8 @@
             <ul>
                 <li><a href="index.html">Startsida</a></li>
                 <li><a href="index.html">Produkter</a></li>
-                <li><a href="index.html">Kontakt</a></li>
                 <li><a href="index.html">Om oss</a></li>
+                <li><a href="index.html">Kontakt</a></li>
 
             </ul>
         </div>

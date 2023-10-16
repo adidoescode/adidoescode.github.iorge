@@ -1,0 +1,280 @@
+nav {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.balls-banner {
+    background-image: url(/img/ball-banner.jpg);
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 3px 4px 6px black;
+    font-size: 2em;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.card {
+    margin: auto;
+    width: 80%;
+    box-shadow: none;
+    border: 1px solid black;
+}
+
+.card img {
+    margin: auto;
+    width: 80%;
+    object-fit: contain;
+    display: block;
+}
+
+.ball-card-1 {
+    grid-area: 1/1/1/2;
+
+}
+
+.ball-card-2 {
+    grid-area: 1/2/1/3;
+
+}
+
+.ball-card-3 {
+    grid-area: 1/3/1/4;
+
+}
+
+.ball-card-4 {
+    grid-area: 1/4/1/5;
+
+}
+
+.ball-card-5 {
+    grid-area: 1/5/1/6;
+
+}
+
+.ball-card-6 {
+    grid-area: 1/6/1/7;
+
+}
+
+
+.description {
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    height: 150px;
+    box-shadow: none;
+    border: 1px solid black;
+
+}
+
+.description p {
+    padding: 0 2%;
+    margin: 2% 0;
+}
+
+.description .brand-type {
+    color: grey;
+}
+
+.description .price {
+    font-size: 1.25em;
+    color: red;
+    font-weight: 700;
+}
+
+.balls-1 {
+    grid-area: 2/1/2/2;
+    background-color: #D9D9D9;
+
+}
+
+.balls-2 {
+    grid-area: 2/2/2/3;
+    background-color: #D9D9D9;
+}
+
+.balls-3 {
+    grid-area: 2/3/2/4;
+    background-color: #D9D9D9;
+}
+
+.balls-4 {
+    grid-area: 2/4/2/5;
+    background-color: #D9D9D9;
+}
+
+.balls-5 {
+    grid-area: 2/5/2/6;
+    background-color: #D9D9D9;
+}
+
+.balls-6 {
+    grid-area: 2/6/2/7;
+    background-color: #D9D9D9;
+}
+
+.club-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3/1/3/7;
+    background-image: url(/img/pexels-kindel-media-6573665\ \(1\).jpg);
+    margin: 5% 0;
+    width: 100%;
+    color: white;
+    font-size: 2em;
+    height: 300px;
+    text-shadow: 3px 4px 6px black;
+}
+
+.club-text h2 {
+    text-decoration: underline;
+    color: green;
+    font-size: 1.75em;
+}
+
+.club-card-1 {
+    grid-area: 4/1/4/2;
+
+}
+
+.club-card-2 {
+    grid-area: 4/2/4/3;
+
+}
+
+.club-card-3 {
+    grid-area: 4/3/4/4;
+
+}
+
+.club-card-4 {
+    grid-area: 4/4/4/5;
+
+}
+
+.club-card-5 {
+    grid-area: 4/5/4/6;
+
+}
+
+.club-card-6 {
+    grid-area: 4/6/4/7;
+
+}
+
+.clubs-1 {
+    grid-area: 5/1/5/2;
+    background-color: #D9D9D9;
+
+}
+
+.clubs-2 {
+    grid-area: 5/2/5/3;
+    background-color: #D9D9D9;
+}
+
+.clubs-3 {
+    grid-area: 5/3/5/4;
+    background-color: #D9D9D9;
+}
+
+.clubs-4 {
+    grid-area: 5/4/5/5;
+    background-color: #D9D9D9;
+}
+
+.clubs-5 {
+    grid-area: 5/5/5/6;
+    background-color: #D9D9D9;
+}
+
+.clubs-6 {
+    grid-area: 5/6/5/7;
+    background-color: #D9D9D9;
+}
+
+.clothes-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 6/1/6/7;
+    background-image: url(/img/pexels-jopwell-1325755.jpg);
+    height: 300px;
+    margin: 5% 0;
+    width: 100%;
+    font-size: 2em;
+    color: white;
+    text-shadow: 3px 4px 6px black;
+}
+
+
+.clothes-card-1 {
+    grid-area: 7/1/7/2;
+
+}
+
+.clothes-card-2 {
+    grid-area: 7/2/7/3;
+
+}
+
+.clothes-card-3 {
+    grid-area: 7/3/7/4;
+
+}
+
+.clothes-card-4 {
+    grid-area: 7/4/7/5;
+
+}
+
+.clothes-card-5 {
+    grid-area: 7/5/7/6;
+
+}
+
+.clothes-card-6 {
+    grid-area: 7/6/7/7;
+
+}
+
+.clothes-1 {
+    grid-area: 8/1/8/2;
+    background-color: #D9D9D9;
+
+}
+
+.clothes-2 {
+    grid-area: 8/2/8/3;
+    background-color: #D9D9D9;
+}
+
+.clothes-3 {
+    grid-area: 8/3/8/4;
+    background-color: #D9D9D9;
+}
+
+.clothes-4 {
+    grid-area: 8/4/8/5;
+    background-color: #D9D9D9;
+}
+
+.clothes-5 {
+    grid-area: 8/5/8/6;
+    background-color: #D9D9D9;
+}
+
+.clothes-6 {
+    grid-area: 8/6/8/7;
+    background-color: #D9D9D9;
+}

@@ -7,23 +7,11 @@
     font-family: 'Barlow', sans-serif;
 }
 
-#dropdown-btn {
-    display: none;
-}
-
-.hidden {
-    display: none;
-}
-
-.links a {
-    text-decoration: none;
-    color: black;
-    margin: 0 2% 0 2%;
-}
 
 nav {
-    min-width: 100%;
+    width: 100%;
     padding: 2% 3% 2% 2%;
+
 }
 
 nav ul {
@@ -31,11 +19,12 @@ nav ul {
     list-style: none;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 nav ul .logo {
     margin: 0 5% 0 10%;
-
+    width: 10%
 }
 
 form input {
@@ -55,14 +44,49 @@ input:focus {
 
 form span {
     position: absolute;
-    margin-top: 12px;
-    margin-left: 20px;
+    margin-top: 9px;
+    margin-left: 15px;
+    font-size: 1.375em;
+}
+
+.nav-links {
+    text-wrap: nowrap;
+    display: inline-flex;
+    position: relative;
+}
+
+.nav-links li {
+    padding: 0 70px;
+    font-size: 1.375em;
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.product-links li {
+    font-size: 1em;
+    padding: 0;
+    margin: 15px 0;
+    display: none;
+}
+
+.product-links:hover {
+    display: block;
+}
+
+
+.product-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .right-icons {
     display: inline-flex;
-    margin-right: 5%;
-    margin-left: 5%;
 }
 
 .right-icons a {
@@ -86,42 +110,6 @@ form span {
 .right-icons .cart-icon {
     width: 28.13px;
     height: 25px;
-}
-
-.header-2 ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #D9D9D9;
-    min-width: 100%;
-    text-wrap: nowrap;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-}
-
-.header-2 ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 1% 1%;
-    font-size: 16px;
-}
-
-.header-2 ul li a:hover {
-    color: white;
-
-}
-
-.right-link1 {
-    margin-left: 10%;
-}
-
-.left-link {
-    margin-left: 5%;
-}
-
-.right-link2 {
-    margin-right: 5%;
 }
 
 .image {
@@ -204,9 +192,6 @@ main {
 
 }
 
-nav ul .logo {
-    width: 15%;
-}
 
 .description {
     width: 80%;
@@ -252,12 +237,19 @@ nav ul .logo {
     background-color: #D9D9D9;
 }
 
+.description-5 {
+    grid-area: 2/5/2/6;
+    background-color: #D9D9D9;
+}
+
+.description-6 {
+    grid-area: 2/6/2/7;
+    background-color: #D9D9D9;
+}
+
 footer {
     min-width: 100%;
     margin-top: 5%;
-
-
-
 }
 
 .row-links {
@@ -268,7 +260,7 @@ footer {
 .row-links ul {
     display: flex;
     align-items: center;
-    padding: 4%;
+    padding: 2%;
     justify-content: space-evenly;
     list-style: none;
     color: cadetblue;
@@ -307,10 +299,9 @@ footer {
     background-color: cadetblue;
     display: flex;
     color: white;
-    background-color: cadetblue;
     align-items: center;
     justify-content: center;
-    padding: .5%;
+
 }
 
 .sponsors img {
@@ -331,12 +322,7 @@ footer {
         font-size: 1.5em;
     }
 
-
     .search-bar {
-        display: none;
-    }
-
-    .header-2 {
         display: none;
     }
 
@@ -344,21 +330,21 @@ footer {
         justify-content: center;
     }
 
-    .logo img {
-        width: 30%;
+    nav ul .logo {
+        width: 15%;
     }
 
     .image {
         background-image: url(/img/banner-image2.jpg)
     }
 
-    img.logo {
-        width: 15%;
+    footer {
+        bottom: 0;
     }
 
 
     .right-icons span {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .image {
@@ -369,31 +355,16 @@ footer {
         cursor: pointer;
     }
 
-    #dropdown-btn {
-        margin: 0;
-        display: initial;
-        background-color: transparent;
-        border: 0;
-        position: absolute;
-        margin-top: 0.6%;
+}
+
+@media screen and (max-width:1100px) {
+    nav ul .logo {
+        width: 16%;
     }
+}
 
-    nav ul .dropdown-links {
-        position: absolute;
-        left: 0;
-        padding: 1% 2%;
-        margin-top: 4%;
-        background-color: white;
-        display: block;
-        flex-direction: column;
-        align-items: baseline;
-        list-style: none;
+@media screen and (max-width:800px) {
+    nav ul .logo {
+        width: 22%;
     }
-
-    .dropdown-links a {
-        text-decoration: none;
-        color: black;
-    }
-
-
 }
